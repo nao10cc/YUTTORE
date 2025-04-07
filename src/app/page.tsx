@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
