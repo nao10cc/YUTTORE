@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'YUTTORE - 運動習慣、ゆるっと始めよう！',
+  title: 'ゆっとれ！- 運動習慣、ゆるっと始めよう！',
   description: '忙しい方でも無理なく続けられる、オンライントレーニングサービス',
 };
 
