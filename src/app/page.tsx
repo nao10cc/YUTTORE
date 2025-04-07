@@ -179,9 +179,10 @@ export default function Home() {
                     こうしてここまで読んでくれてるあなたは、もう動き始めてます
                   </p>
                   <p className="text-lg">
-                    <span className="font-bold relative inline-block">
-                      <span className="relative z-10">その小さな前進が、とても素敵です。</span>
-                      <span className="absolute bottom-0 left-0 w-full h-[6px] bg-[#FF9800] z-0"></span>
+                    <span className="font-bold">
+                      <span className="relative">
+                        <span className="relative z-10 border-b-[6px] border-[#FF9800] border-opacity-70 pb-0">その小さな前進が、<br className="sm:hidden" />とても素敵です。</span>
+                      </span>
                     </span>
                   </p>
                   <p className="text-lg">
@@ -199,7 +200,7 @@ export default function Home() {
           <AnimatedSection delay={0.1}>
             <div className="max-w-6xl mx-auto px-4">
               <div className="text-center mb-12">
-                <h2 className="section-title">ゆっとれ！オンライントレーニング</h2>
+                <h2 className="section-title">ゆっとれ！<br className="sm:hidden" />オンライントレーニング</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                 <AnimatedSection delay={0.15} className="card p-6 text-center">
@@ -230,7 +231,7 @@ export default function Home() {
                 {/* プラン1 */}
                 <AnimatedSection delay={0.15} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#ff5722]">
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#ff5722] mb-3">ゆっとれ！オンライントレーニング</h3>
+                    <h3 className="text-xl font-bold text-[#ff5722] mb-3">ゆっとれ！<br className="sm:hidden" />オンライントレーニング</h3>
                     <div className="bg-orange-50 rounded-lg p-3 mb-4 inline-block">
                       <p className="text-lg font-bold text-[#ff5722]">月額：980円（税別）</p>
                     </div>
@@ -339,7 +340,7 @@ export default function Home() {
             {/* ステップフロー */}
             <div className="relative max-w-2xl mx-auto">
               {/* 縦線 */}
-              <div className="absolute left-[28px] top-0 w-1 h-[calc(100%-80px)] bg-[#ff5722] opacity-50 z-0"></div>
+              <div className="absolute left-[28px] top-0 w-1 h-full bg-[#ff5722] opacity-50 z-0 max-h-[calc(100%-120px)]"></div>
               
               <div className="space-y-12">
                 <AnimatedSection delay={0.15} className="relative z-10">
@@ -436,7 +437,13 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-center text-[#ff5722] mb-6">あなたの毎日が少しずつ変わっていく</h3>
                 <div className="space-y-4 text-center">
                   <p className="text-lg">その「ちょっとやってみようかな」が、未来を変える一歩。</p>
-                  <p className="text-lg">ほんの少しの勇気が、自分を大切にする習慣につながっていきます。</p>
+                  <p className="text-lg">
+                    <span className="font-bold">
+                      <span className="relative">
+                        <span className="relative z-10 border-b-[6px] border-[#FF9800] border-opacity-70 pb-0">その小さな前進が、<br className="sm:hidden" />とても素敵です。</span>
+                      </span>
+                    </span>
+                  </p>
                   <p className="text-lg font-bold text-[#ff5722] mt-6">あなたの「変わりたい」を、ゆっとれが応援します</p>
                 </div>
               </div>

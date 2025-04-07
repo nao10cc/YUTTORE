@@ -34,10 +34,10 @@ body {
     color: var(--primary-color);
   }
   
-  .section-title::after {
+  /* .section-title::after {
     content: '';
     @apply absolute -bottom-2 left-0 w-full h-1 bg-[#ff9800] rounded-full;
-  }
+  } */
   
   .btn-primary {
     @apply inline-block bg-[#ff9800] hover:bg-[#ff5722] text-white font-bold py-3 px-8 rounded-full shadow-md transition-all duration-300;
