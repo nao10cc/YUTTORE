@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+  --primary-color: #ff9800;
+  --secondary-color: #ff5722;
+  --accent-color: #4caf50;
+  --text-color: #333;
+  --light-bg: #f9f9f9;
+  --line-color: #06C755;
+}
+
+body {
+  color: var(--text-color);
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #fff;
+  line-height: 1.6;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.3;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-center mb-8 relative inline-block;
+    color: var(--primary-color);
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute -bottom-2 left-0 w-full h-1 bg-[#ff9800] rounded-full;
+  }
+  
+  .btn-primary {
+    @apply inline-block bg-[#ff9800] hover:bg-[#ff5722] text-white font-bold py-3 px-8 rounded-full shadow-md transition-all duration-300;
+  }
+  
+  .btn-line {
+    @apply inline-block bg-[#06C755] hover:bg-[#05a648] text-white font-bold py-3 px-8 rounded-full shadow-md transition-all duration-300;
+  }
+  
+  .btn-large {
+    @apply py-4 px-10 text-lg;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
+  }
+}
