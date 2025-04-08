@@ -93,7 +93,7 @@ export default function Home() {
           
           {/* 波形の背景 */}
           <div className="absolute bottom-0 left-0 w-full overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FB852A" fillOpacity="1" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,186.7C672,213,768,235,864,224C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FB852A" fillOpacity="1" d="M0,185L48,169C96,153,192,121,288,121C384,121,480,153,576,179.7C672,206,768,228,864,217C960,206,1056,164,1152,142.3C1248,121,1344,121,1392,121L1440,121L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
           </div>
         </div>
 
@@ -102,7 +102,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4">
             <AnimatedSection delay={0.1} className="text-center max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 text-[#333]">運動習慣、<br />ゆるっと始めよう！</h2>
-              <p className="text-xl md:text-2xl mb-6 md:mb-8 text-[#ff5722] font-bold">4月限定！<br />新規LINE登録で無料体験可能！</p>
+              <p className="text-xl md:text-2xl mb-6 md:mb-8 text-[#ff5722] font-bold">4月限定！<br className="sm:hidden inline" />新規LINE登録で無料体験可能！</p>
               
               <div className="mt-10 md:mt-16 mb-8 md:mb-12">
                 <a href="https://lin.ee/yAYKSzZ" className="btn-line btn-large">
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
             <AnimatedSection delay={0.3}>
               <div className="text-center mb-16">
-                <p className="text-2xl font-bold py-3 px-8 bg-[#ff5722] text-white inline-block rounded-lg shadow-md mx-auto">そんなあなたに、ぴったりです！</p>
+                <p className="text-2xl font-bold py-3 px-8 bg-[#ff5722] text-white inline-block rounded-lg shadow-md mx-auto">そんなあなたに、<br className="sm:hidden inline" />ぴったりです！</p>
               </div>
             </AnimatedSection>
           </div>
@@ -200,7 +200,7 @@ export default function Home() {
           <AnimatedSection delay={0.1}>
             <div className="max-w-6xl mx-auto px-4">
               <div className="text-center mb-12">
-                <h2 className="section-title">ゆっとれ！<br className="sm:hidden" />オンライントレーニング</h2>
+                <h2 className="section-title">ゆっとれ！<br className="sm:hidden inline" />オンライントレーニング</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                 <AnimatedSection delay={0.15} className="card p-6 text-center">
@@ -225,46 +225,38 @@ export default function Home() {
           <AnimatedSection delay={0.1}>
             <div className="max-w-6xl mx-auto px-4">
               <div className="text-center mb-12">
-                <h2 className="section-title">あなたにぴったりのプラン、選べます</h2>
+                <h2 className="section-title">あなたにぴったりのプラン、<br className="sm:hidden inline" />選べます</h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-                {/* プラン1 */}
-                <AnimatedSection delay={0.15} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#ff5722]">
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#ff5722] mb-3">ゆっとれ！<br className="sm:hidden" />オンライントレーニング</h3>
-                    <div className="bg-orange-50 rounded-lg p-3 mb-4 inline-block">
-                      <p className="text-lg font-bold text-[#ff5722]">月額：980円（税別）</p>
+              <div className="mb-10">
+                <AnimatedSection delay={0.15} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border-t-4 border-[#ff5722] w-full relative transform hover:-translate-y-1">
+                  <div className="absolute top-0 right-0 bg-[#ff5722] text-white py-1 px-4 rounded-bl-lg font-bold text-sm">おすすめ</div>
+                  <div className="p-8">
+                    <h3 className="text-2xl font-bold text-[#ff5722] mb-4">ゆっとれ！<br className="sm:hidden inline" />オンライントレーニング</h3>
+                    <div className="bg-orange-50 rounded-lg p-4 mb-5 inline-block">
+                      <p className="text-xl font-bold text-[#ff5722]">月額：980円（税別）</p>
                     </div>
-                    <div className="text-gray-700 mb-6 space-y-3">
-                      <p className="">忙しくても大丈夫。</p>
-                      <p className="">週2回・30分、自宅でゆるっとできる配信型トレーニング！</p>
-                      <p className="">初心者向け・女性向け・中級者向けなど、いろんなテーマも準備中</p>
-                      <div className="mt-4 pt-3 border-t border-gray-200">
-                        <p className="font-bold text-[#ff5722] text-center">まずはここから運動習慣、始めませんか？</p>
+                    <div className="text-gray-700 mb-6 space-y-4">
+                      <p className="leading-relaxed text-lg">忙しくても大丈夫。</p>
+                      <p className="leading-relaxed text-lg">週2回・30分、自宅でゆるっとできる配信型トレーニング！</p>
+                      <p className="leading-relaxed text-lg">初心者向け・女性向け・中級者向けなど、いろんなテーマも準備中</p>
+                      <div className="mt-6 pt-4 border-t border-gray-200">
+                        <p className="font-bold text-[#ff5722] text-center text-xl">まずはここから運動習慣、始めませんか？</p>
                       </div>
-                    </div>
-                    <div className="h-48 bg-gray-100 rounded-lg flex items-center justify-center">
-                      <p className="text-gray-500">(画像)</p>
                     </div>
                   </div>
                 </AnimatedSection>
-                
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
                 {/* プラン2 */}
                 <AnimatedSection delay={0.2} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#ff5722]">
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#ff5722] mb-3">ゆっとれ！食事管理</h3>
-                    <div className="bg-orange-50 rounded-lg p-3 mb-4 inline-block">
-                      <p className="text-lg font-bold text-[#ff5722]">月額：20,000円（税別）</p>
-                    </div>
+                    <h3 className="text-xl font-bold text-[#ff5722] mb-3">ゆっとれ！<br />食事管理</h3>
                     <div className="text-gray-700 mb-6 space-y-3">
-                      <p className="">食事の写真を送るだけで、プロがレビュー＆アドバイス！</p>
-                      <p className="">「食事を減らしているのに痩せられない」「何を食べたらいいかわからない」</p>
-                      <div className="mt-4 pt-3 border-t border-gray-200">
-                        <p className="font-bold text-[#ff5722] text-center">そんなあなたにぴったりのサポートプランです。</p>
-                      </div>
+                      <p className="leading-relaxed">食事の写真を送るだけで、プロがレビュー＆アドバイス！</p>
+                      <p className="leading-relaxed">「食事を減らしているのに痩せられない」「何を食べたらいいかわからない」</p>
                     </div>
-                    <div className="h-48 bg-gray-100 rounded-lg flex items-center justify-center">
-                      <p className="text-gray-500">(画像)</p>
+                    <div className="bg-orange-50 rounded-lg p-3 mb-4 inline-block">
+                      <p className="text-lg font-bold text-[#ff5722]">月額：49,800円（税別）</p>
                     </div>
                   </div>
                 </AnimatedSection>
@@ -272,23 +264,18 @@ export default function Home() {
                 {/* プラン3 */}
                 <AnimatedSection delay={0.25} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#ff5722]">
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#ff5722] mb-3">ゆっとれ！パーソナルトレーニング</h3>
+                    <h3 className="text-xl font-bold text-[#ff5722] mb-3">ゆっとれ！<br />パーソナルトレーニング</h3>
                     <div className="text-gray-700 mb-6 space-y-3">
-                      <p className="">毎週1回のマンツーマン指導で、しっかり変わりたい人に。</p>
-                      <p className="">場所代・交通費込み、追加料金なし！</p>
-                      
+                      <p className="leading-relaxed">毎週1回のマンツーマン指導で、しっかり変わりたい人に。</p>
+                      <p className="leading-relaxed">場所代・交通費込み、追加料金なし！</p>
                       <div className="bg-orange-50 rounded-lg p-3 mt-4">
-                        <p className="font-bold text-[#ff5722]">60分プラン：29,800円/月（税別）</p>
+                        <p className="font-bold text-[#ff5722]">60分プラン：49,800円/月（税別）</p>
                         <p className="text-sm mt-1">体力に自信がない方にもおすすめ。コンパクトに集中トレーニング。</p>
                       </div>
-                      
                       <div className="bg-orange-50 rounded-lg p-3 mt-4">
-                        <p className="font-bold text-[#ff5722]">90分プラン：37,800円/月（税別）</p>
+                        <p className="font-bold text-[#ff5722]">90分プラン：57,800円/月（税別）</p>
                         <p className="text-sm mt-1">フォームを丁寧に見てほしい方、じっくり取り組みたい方へ。</p>
                       </div>
-                    </div>
-                    <div className="h-48 bg-gray-100 rounded-lg flex items-center justify-center">
-                      <p className="text-gray-500">(画像)</p>
                     </div>
                   </div>
                 </AnimatedSection>
@@ -296,23 +283,18 @@ export default function Home() {
                 {/* プラン4 */}
                 <AnimatedSection delay={0.3} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#ff5722]">
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#ff5722] mb-3">ペアトレのご案内</h3>
+                    <h3 className="text-xl font-bold text-[#ff5722] mb-3">ゆっとれ！<br />ペアトレのご案内</h3>
                     <div className="text-gray-700 mb-6 space-y-3">
-                      <p className="">「1人じゃ不安…」という方は、友達やご家族と一緒に！</p>
-                      <p className="">2人で受けるパーソナルで、気軽さ＆お得感アップ</p>
-                      
+                      <p className="leading-relaxed">「1人じゃ不安…」という方は、友達やご家族と一緒に！</p>
+                      <p className="leading-relaxed">2人で受けるパーソナルで、気軽さ＆お得感アップ</p>
                       <div className="bg-orange-50 rounded-lg p-3 mt-4">
-                        <p className="font-bold text-[#ff5722]">60分：50,000円/月</p>
-                        <p className="text-sm mt-1">1人あたり25,000円（税別）</p>
+                        <p className="font-bold text-[#ff5722]">60分：80,000円/月</p>
+                        <p className="text-sm mt-1">1人あたり40,000円（税別）</p>
                       </div>
-                      
                       <div className="bg-orange-50 rounded-lg p-3 mt-4">
-                        <p className="font-bold text-[#ff5722]">90分：64,000円/月</p>
-                        <p className="text-sm mt-1">1人あたり32,000円（税別）</p>
-                      </div>
-                    </div>
-                    <div className="h-48 bg-gray-100 rounded-lg flex items-center justify-center">
-                      <p className="text-gray-500">(画像)</p>
+                        <p className="font-bold text-[#ff5722]">90分：98,000円/月</p>
+                        <p className="text-sm mt-1">1人あたり49,000円（税別）</p>
+                      </div>  
                     </div>
                   </div>
                 </AnimatedSection>
@@ -320,12 +302,6 @@ export default function Home() {
             </div>
           </AnimatedSection>
         </div>
-        
-
-        
-
-
-
         
         {/* 変わる毎日 */}
         <div id="bonus" className="py-16 w-full bg-orange-50">
