@@ -255,14 +255,12 @@ export default function Home() {
                       <p className="leading-relaxed">食事の写真を送るだけで、プロがレビュー＆アドバイス！</p>
                       <p className="leading-relaxed">「食事を減らしているのに痩せられない」「何を食べたらいいかわからない」</p>
                       <p className="leading-relaxed">という方におススメ！</p>
+                      <div className="bg-orange-50 rounded-lg p-3 mb-4 inline-block">
+                        <p className="text-lg font-bold text-[#ff5722]">月額：49,800円（税別）</p>
+                      </div>
+                      <p className="leading-relaxed">食べたものが全て写るように写真に撮ってLINEに送るだけ！</p>
+                      <p className="leading-relaxed">毎食のアドバイスを通して無理のない自分にあった食事を見つけよう！</p>
                     </div>
-                    <div className="bg-orange-50 rounded-lg p-3 mb-4 inline-block">
-                      <p className="text-lg font-bold text-[#ff5722]">月額：49,800円（税別）</p>
-                    </div>
-
-                    <p className="leading-relaxed">食べたものが全て写るように写真に撮ってLINEに送るだけ！</p>
-                    <p className="leading-relaxed">毎食のアドバイスを通して無理のない自分にあった食事を見つけよう！</p>
-
                   </div>
                 </AnimatedSection>
                 
