@@ -254,10 +254,15 @@ export default function Home() {
                     <div className="text-gray-700 mb-6 space-y-3">
                       <p className="leading-relaxed">食事の写真を送るだけで、プロがレビュー＆アドバイス！</p>
                       <p className="leading-relaxed">「食事を減らしているのに痩せられない」「何を食べたらいいかわからない」</p>
+                      <p className="leading-relaxed">という方におススメ！</p>
                     </div>
                     <div className="bg-orange-50 rounded-lg p-3 mb-4 inline-block">
                       <p className="text-lg font-bold text-[#ff5722]">月額：49,800円（税別）</p>
                     </div>
+
+                    <p className="leading-relaxed">食べたものが全て写るように写真に撮ってLINEに送るだけ！</p>
+                    <p className="leading-relaxed">毎食のアドバイスを通して無理のない自分にあった食事を見つけよう！</p>
+
                   </div>
                 </AnimatedSection>
                 
@@ -270,11 +275,11 @@ export default function Home() {
                       <p className="leading-relaxed">場所代・交通費込み、追加料金なし！</p>
                       <div className="bg-orange-50 rounded-lg p-3 mt-4">
                         <p className="font-bold text-[#ff5722]">60分プラン：49,800円/月（税別）</p>
-                        <p>体力に自信がない方にもおすすめ。コンパクトに集中トレーニング。</p>
+                        <p className="text-sm mt-1">体力に自信がない方にもおすすめ。コンパクトに集中トレーニング。</p>
                       </div>
                       <div className="bg-orange-50 rounded-lg p-3 mt-4">
                         <p className="font-bold text-[#ff5722]">90分プラン：57,800円/月（税別）</p>
-                        <p>フォームを丁寧に見てほしい方、じっくり取り組みたい方へ。</p>
+                        <p className="text-sm mt-1">フォームを丁寧に見てほしい方、じっくり取り組みたい方へ。</p>
                       </div>
                     </div>
                   </div>
@@ -288,12 +293,12 @@ export default function Home() {
                       <p className="leading-relaxed">「1人じゃ不安…」という方は、友達やご家族と一緒に！</p>
                       <p className="leading-relaxed">2人で受けるパーソナルで、気軽さ＆お得感アップ</p>
                       <div className="bg-orange-50 rounded-lg p-3 mt-4">
-                        <p className="font-bold text-[#ff5722]">60分：80,000円/月</p>
-                        <p>1人あたり40,000円（税別）</p>
+                        <p className="font-bold text-[#ff5722]">60分：40,000円/月</p>
+                        <p className="text-sm mt-1">2人あたり80,000円（税別）</p>
                       </div>
                       <div className="bg-orange-50 rounded-lg p-3 mt-4">
-                        <p className="font-bold text-[#ff5722]">90分：98,000円/月</p>
-                        <p>1人あたり49,000円（税別）</p>
+                        <p className="font-bold text-[#ff5722]">90分：49,000円/月</p>
+                        <p className="text-sm mt-1">2人あたり98,000円（税別）</p>
                       </div>  
                     </div>
                   </div>
